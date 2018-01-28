@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="bel.ink.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcherx"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Ui.Activity.MainActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="NotE"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="bel.ink.myapplication.Models.Entity.Note"/>
+
+        <activity android:name=".Ui.Activity.DetailActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/meneViewSave"
+        android:title="@string/save"/>
+    <item
+        android:id="@+id/menuViewDelete"
+        android:title="@string/delete"/>
+</menu>
